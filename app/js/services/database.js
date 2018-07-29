@@ -8,49 +8,100 @@ quizzlerApp.factory("DataBaseFactory", function () {
 
     factory.questions = [
         {
-            "id": 1,
-            "QuestionText" : "QQQQ QQQQQ QQQQQQ QQQQQQ QQQQQ QQQQQQ QQQQQQQQQ QQQQQ QQQQQ QQQQQQQ  QQQQQ QQQQQQQQQ QQQQQQ1",
-            "Answers" : [
+            id: 1,
+            QuestionText : "Who won the 2014 Fifa World Cup",
+            Answers : [
                 {
-                    "id": 1,
-                    "text": "AAAA AAAAAA AAAAAAAA AAAAAAAAAA AAAAAAAAAAAA AAAAAAAAA AAAAAAAAAA AAAAAAAA AAAAAAAA AAAAAAAA1"
+                    id: 1,
+                    text: "Argentine"
                 },
                 {
-                    "id": 2,
-                    "text": "BBBBBB BBBBBBB BBBBBB1"
+                    id: 2,
+                    text: "France"
                 },
                 {
-                    "id": 3,
-                    "text": "CCCCCCC CCCCCCCC CCCCCCC1"
+                    id: 3,
+                    text: "Germany"
                 },
                 {
-                    "id": 4,
-                    "text": "DDDDD DDDDDDDDD DDDDDD DDD1"
+                    id: 4,
+                    text: "Spain"
                 }
-            ]
+            ],
+            correctAnswer: 3
         },
         {
-            "id": 2,
-            "QuestionText" : "QQQQ QQQQQ QQQQQQ QQQQQQ QQQQQ QQQQQQ QQQQQQQQQ QQQQQ QQQQQ QQQQQQQ  QQQQQ QQQQQQQQQ QQQQQQ2",
-            "Answers" : [
+            id: 2,
+            QuestionText : "In Batman Comics who is the third Robin",
+            Answers : [
                 {
-                    "id": 1,
-                    "text": "AAAA AAAAAA AAAAAAAA AAAAAAAAAA AAAAAAAAAAAA AAAAAAAAA AAAAAAAAAA AAAAAAAA AAAAAAAA AAAAAAAA2"
+                    id: 1,
+                    text: "Grayson"
                 },
                 {
-                    "id": 2,
-                    "text": "BBBBBB BBBBBBB BBBBBB2"
+                    id: 2,
+                    text: "Todd"
                 },
                 {
-                    "id": 3,
-                    "text": "CCCCCCC CCCCCCCC CCCCCCC2"
+                    id: 3,
+                    text: "Tim"
                 },
                 {
-                    "id": 4,
-                    "text": "DDDDD DDDDDDDDD DDDDDD DDD2"
+                    id: 4,
+                    text: "Damyen"
                 }
-            ]
+            ],
+            correctAnswer: 3
+        },
+        {
+            id: 3,
+            QuestionText : "In Sherlock Holmes literature, what is the name of his fellow doctor",
+            Answers : [
+                {
+                    id: 1,
+                    text: "Dr.Wilson"
+                },
+                {
+                    id: 2,
+                    text: "Dr.Watson"
+                },
+                {
+                    id: 3,
+                    text: "Dr.Thomson"
+                }
+            ],
+            correctAnswer: 2
+        },
+        {
+            id: 4,
+            QuestionText : "In attack on titan anime, what is the name of the protagonist",
+            Answers : [
+                {
+                    id: 1,
+                    text: "Eren"
+                },
+                {
+                    id: 2,
+                    text: "Armin"
+                },
+                {
+                    id: 3,
+                    text: "Arwin"
+                },
+                {
+                    id: 4,
+                    text: "Levi"
+                },
+                {
+                    id: 5,
+                    text: "Mikasa"
+                }
+            ],
+            correctAnswer: 1
         }
+    ];
+
+    factory.selectedAnswers = [
     ];
 
 

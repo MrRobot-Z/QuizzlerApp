@@ -10,7 +10,8 @@
                 <ul style="list-style-type:none">
                     <li ng-repeat="ans in question.Answers" class="span10">
                         <div class="row radio">
-                            <label><input type="radio" name="{{question.id}}" value="{{ans.id}}">{{ans.text}}</label>
+                            <label><input type="radio" name="{{question.id}}" value="{{ans.id}}" ng-click="selected(question, ans)">
+                                {{ans.text}}</label>
                         </div>
                     </li>
                 </ul>

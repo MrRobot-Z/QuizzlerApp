@@ -18,5 +18,6 @@ quizzlerApp.config(function ($routeProvider) {
     });
 
     $routeProvider.otherwise({redirectTo: '/questions'});
+
 }
 );

@@ -10,14 +10,18 @@
                 <ul style="list-style-type:none">
                     <li ng-repeat="ans in question.Answers" class="span10">
                         <div class="row radio">
-                            <!--<span class="span1">A:::</span>-->
-                            <!--<span class="span9">{{ans.text}}</span>-->
-                            <label><input type="radio" name="optradio">{{ans.text}}</label>
+                            <label><input type="radio" name="{{question.id}}" value="{{ans.id}}">{{ans.text}}</label>
                         </div>
                     </li>
                 </ul>
             </div>
         </li>
     </ul>
+
+    <hr>
+    <hr>
+    <div style="padding-bottom: 30px">
+        <a href="#/submit"><button class="btn btn-primary btn-lg btn-block">Submit</button></a>
+    </div>
 
 </div>

@@ -11,6 +11,12 @@ quizzlerApp.config(function ($routeProvider) {
         templateUrl: "/templates/questionsViewer.html",
         controller: "QuestionViewerController"
     });
+
+    $routeProvider.when("/submit", {
+        templateUrl: "/templates/submit.html",
+        controller: "SubmitController"
+    });
+
     $routeProvider.otherwise({redirectTo: '/questions'});
 }
 );

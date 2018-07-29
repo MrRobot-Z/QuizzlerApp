@@ -1,0 +1,23 @@
+<div class="container">
+    <h1 class="text-center">Questions</h1>
+    <hr/>
+
+    <ul class="thumbnails span12">
+        <li ng-repeat="question in questions" class="span10">
+            <div class="well hoverwell span12">
+                <div class="row"><h2 class="span12">{{question.QuestionText}}</h2></div>
+
+                <ul style="list-style-type:none">
+                    <li ng-repeat="ans in question.Answers" class="span10">
+                        <div class="row radio">
+                            <!--<span class="span1">A:::</span>-->
+                            <!--<span class="span9">{{ans.text}}</span>-->
+                            <label><input type="radio" name="optradio">{{ans.text}}</label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+
+</div>

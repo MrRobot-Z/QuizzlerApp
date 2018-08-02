@@ -7,17 +7,17 @@
 var quizzlerApp = angular.module("QuizzlerApp", ["ngRoute"]);
 
 quizzlerApp.config(function ($routeProvider) {
-    $routeProvider.when("/questions",{
-        templateUrl: "/templates/questionsViewer.html",
+    $routeProvider.when("/",{
+        templateUrl: "templates/questionsViewer.html",
         controller: "QuestionViewerController"
     });
 
     $routeProvider.when("/submit", {
-        templateUrl: "/templates/submit.html",
+        templateUrl: "templates/submit.html",
         controller: "SubmitController"
     });
 
-    $routeProvider.otherwise({redirectTo: '/questions'});
+    $routeProvider.otherwise({redirectTo: '/'});
 
 }
 );
